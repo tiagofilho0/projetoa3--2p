@@ -44,3 +44,8 @@ UPDATE login SET senha = MD5(senha) WHERE cpf = cpf
 
 SELECT * FROM login
 
+SELECT nome,descricao,usuario.cpf 
+           FROM usuario
+           INNER JOIN login ON login.cpf = usuario.cpf
+           INNER JOIN nivel ON nivel.id = nivel
+
