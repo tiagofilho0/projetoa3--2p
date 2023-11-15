@@ -2,6 +2,7 @@
 
 include('conexao.php');
 include('funcoes.php');
+include('validalogin.php');
 
 $login = isset($_POST['login']) ? $_POST['login'] : '';
 $senha = isset($_POST['senha']) ? $_POST['senha'] : '';
